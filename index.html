@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba - Developer Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Apurba's Portfolio</div>
+
+            <div class="right" id="navMenu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </div>
+
+            <div class="right-icons">
+                <i class="fa-solid fa-moon" id="themeBtn" title="Toggle Theme"></i>
+                <i class="fa-solid fa-bars" id="menuBtn" title="Toggle Menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="Purple">Apurba</span>
+                <div>and I am a Passionate</div>
+                <div>Web Developer</div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <a href="resume.pdf" download="Apurba_Kumar_Saha_Resume.pdf" id="resumeBtn" class="btn">Download Resume</a>
+                    <a href="https://github.com/coderapu" target="_blank" id="githubBtn" class="btn btn-outline">GitHub</a>
+                    <a id="linkedinBtn" class="btn btn-outline">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="bg.png" alt="Developer Image">
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- About Section -->
+        <section id="about" class="aboutSection">
+            <span class="text-grey">Get to know me</span>
+            <h1>About Me</h1>
+            
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm <span class="Purple">Apurba Kumar Saha</span>, a B.Tech graduate in Information Technology from the University of Kalyani. I am passionate about building practical web applications and exploring the ever-evolving field of cybersecurity, currently training as a Security Operations Center (SOC) Analyst.
+                    </p>
+                    <p>
+                        Whether it's developing interactive applications or analyzing system architecture and security, I love combining clean code with robust problem-solving skills.
+                    </p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <strong>Degree:</strong> B.Tech in IT (University of Kalyani)
+                        </div>
+                        <div class="detail-item">
+                            <strong>Core Focus:</strong> Web Development & Cybersecurity (SOC)
+                        </div>
+                        <div class="detail-item">
+                            <strong>Tech Stack:</strong> Java, Python, JavaScript, HTML, CSS, Git
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projectsSection">
+            <span class="text-grey">What I have built</span>
+            <h1>Featured Projects</h1>
+
+            <div class="projects-grid">
+                
+                <!-- Project 1: FitScan -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>FitScan</h3>
+                        <p>A web-based upper-body clothing size measurement application utilizing computer vision pose detection technology for accurate virtual fitting.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://clothing-size-measurement.netlify.app/" target="_blank" class="btn-sm">Live Demo</a>
+                            <a href="https://github.com/coderapu" target="_blank" class="btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Family Document Portal -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Family Document Portal</h3>
+                        <p>A secure static web application developed using Firebase CLI, Firestore, Firebase Hosting, and Cloud Storage for centralized file management.</p>
+                        <div class="project-tags">
+                            <span>Firebase</span>
+                            <span>Firestore</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/coderapu" target="_blank" class="btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Portfolio Website -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Developer Portfolio</h3>
+                        <p>A personal developer portfolio website featuring dark/light mode toggle, dynamic typing effects, smooth scrolling, and responsive layout design.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/coderapu" target="_blank" class="btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Contact Me Section -->
+        <section id="contact" class="contactSection">
+            <span class="text-grey">Get in touch</span>
+            <h1>Contact Me</h1>
+
+            <div class="contact-container">
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Message sent successfully.');">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+                <div class="social-links">
+                    <p>Or connect with me directly:</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/coderapu" target="_blank" title="GitHub">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/apurba-kumar-saha-b6a2b0261/" target="_blank" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Apurba's Developer Portfolio</h3>
+                <div class="footer-socials">
+                    <a href="https://github.com/coderapu" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/apurba-kumar-saha-b6a2b0261/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            <p>Copyright &#169; 2026 Apurba's Developer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Typed.js Library -->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: [
+                'Web Developer',
+                'Cyber Security SOC Analyst',
+                'Web Designer',
+                'Video Editor'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
